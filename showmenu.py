@@ -30,4 +30,3 @@ def showmenu():
 
     pygame.display.update()
     clock.tick(20)
-        

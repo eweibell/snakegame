@@ -19,12 +19,12 @@ while not game_over:
                     quit()
                 if event.key == pygame.K_p:
                     play_result = play()
-if play_result == 'hit border':
-    print('calling game over')
-    gameover('You hit the border')
-else:
-    print('calling showmenu')
-    showmenu()
+    if play_result == 'hit border':
+        print('calling game over')
+        gameover('You hit the border')
+    else:
+        print('calling showmenu')
+        showmenu()
 
 pygame.quit()
 quit()
